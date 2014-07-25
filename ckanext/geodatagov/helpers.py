@@ -311,6 +311,7 @@ def get_dynamic_menu():
     if json_menu_clean:
         try:
             menus = json.loads(json_menu_clean)
+            menus['source'] = json_menu_clean
         except:
             pass
 
