@@ -1438,12 +1438,19 @@ aside.secondary{margin-left:15px !important;border:1px solid #ccc;border-right:0
     background: url("../../../../base/images/nav.png") repeat-y scroll 16px 0 #ffffff;
 
 }
-.toolbar .add_action {
-    right: 10px;
-    top: -50px;
+#content .toolbar .add_action {
+    position: static !important;
 }
-.toolbar .breadcrumb {
-    position: absolute;
-    right: 400px;
-    top: -50px;
+.sub-nav.banner-nav {
+    background-color: #eef7ff;
+    border-bottom: 1px solid #bfd4e1;
+    border-top: 1px solid #fff;
+}
+.sub-nav.banner-nav .nav{margin-bottom:0px;}
+.sub-nav.banner-nav .nav > li > a {
+    color: #333;
+    display: block;
+    font-size: 16px;
+    padding: 10px 15px;
+    position: relative;
 }
