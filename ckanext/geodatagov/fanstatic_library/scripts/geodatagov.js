@@ -129,6 +129,18 @@ $(document).ready(function () {
         } else {
             $('#exitURL').hide();
         }
+        var cookie_comm = $.cookie('community_hash').replace("_navigation","")+'-';
+        var cookie_class='topic-'+$.cookie('community_hash').replace("_navigation","");
+        if ((typeof cookie_comm !== 'undefined') && ('' !== cookie_comm)) {
+
+            $('.topic_url').attr('href', cookie_comm);
+            $('.topic_name').html(cookie_comm);
+            $('.category-header').addClass(cookie_class);
+            $('.topic_name').show();
+
+        }else{
+
+        }
     }
 });
 
@@ -151,7 +163,6 @@ jQuery(window).load(function(){
         }
 
         linkRewriter("next.data.gov", "staging.data.gov");
-        jQuery("#menu-community a[href*='catalog']").addClass('active');
 
     }
     (function($) {
@@ -190,3 +201,7 @@ jQuery(window).load(function(){
 if ($.browser.msie && $.browser.version == 10) {
     $("html").addClass("ie10");
 }
+setTimeout(function() {
+    jQuery("#menu-community a[href*='catalog']").addClass('active');
+}, 5000);
+if(window.location.host.indexOf('/organization/')){$('#dataset-search').css('margin-top',0)}
