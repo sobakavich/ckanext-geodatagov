@@ -588,8 +588,8 @@ a {
 .dataset-map-expanded #dataset-map {
     position: absolute;
     width: 968px;
-    height: 384px;
-    top: -384px;
+    height: 383px;
+    top: -385px;
     left: -1px;
     background-color: white;
     border: 1px solid #CCC;
@@ -1500,6 +1500,7 @@ aside.secondary{margin-left:15px !important;border:1px solid #ccc;border-right:0
     font-size: 35px;
     font-weight: lighter;
     margin-left: 26px;
+    margin-top:8px;
 }
 .toolbar .pill{border-radius:0px;background-color:#a2a2a2;}
 .btn-primary.question {
@@ -1640,3 +1641,18 @@ margin-top:0px
     float:none !important ;
     }
     }
+
+.navbar-nav > li > .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+}
+.sub-nav.banner-nav nav li a:hover, .subnav.banner nav li a.active {
+    background-color: #eef7ff;
+}
+.sub-nav.banner-nav .dropdown-menu li a {
+    padding: 0.75em 1em;
+}
+.sub-nav.banner-nav .nav.navbar-nav li a {
+    padding-bottom: 9px;
+}
