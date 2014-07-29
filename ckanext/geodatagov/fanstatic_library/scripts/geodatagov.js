@@ -187,15 +187,15 @@ jQuery(window).load(function(){
             var cookie_class='topic-'+$.cookie('community_hash').replace("_navigation","");
             if (cookie_comm==='jobs-and-skills-')
             {
-                cookie_comm='jobs & skills';
+                cookie_comm='jobs & skills - ';
             }else if(cookie_comm==='development-'){
-                cookie_comm='Global development';
+                cookie_comm='Global development - ';
             }
             else if(cookie_comm==='research-'){
-                cookie_comm='science & research';
+                cookie_comm='science & research - ';
             }
             else if(cookie_comm==='food-'){
-                cookie_comm='agriculture';
+                cookie_comm='agriculture - ';
             }
 
 
@@ -213,9 +213,11 @@ jQuery(window).load(function(){
 if ($.browser.msie && $.browser.version == 10) {
     $("html").addClass("ie10");
 }
-setTimeout(function() {
+window.onload=function(){
+
     jQuery("#menu-community a[href*='catalog']").addClass('active');
-}, 5000);
+
+}
 if(window.location.host.indexOf('/organization/')){$('#dataset-search').css('margin-top',0)}
 if(window.location.host.indexOf('/harvest?')){$('#dataset-search').css('margin-top',0)}
 if(window.location.host.indexOf('/harvest/')){$('#dataset-search').css('margin-top',0)}
