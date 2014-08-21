@@ -933,7 +933,7 @@ body{font-size:87.5%;}
 header .header_new.banner_new.page-heading_new  {
     background-color: #4679B2;
     color: #FFFFFF;
-    padding:2px 0;
+    padding:8px 0;
 }
 .header_new.banner_new.page-heading_new {
     border-bottom: 0 none;
@@ -1683,4 +1683,10 @@ margin-top:0px
     -moz-border-radius: 4px;
     border-radius: 4px;
     margin-left: 0;
+}
+.masthead .container .logo {
+    margin-top: 2px;
+}
+header.masthead .container {
+    width: 945px !important;
 }
