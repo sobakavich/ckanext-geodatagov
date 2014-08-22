@@ -1013,8 +1013,7 @@ input.form-control {
 }
 .masthead{background-color:#fff;}
 ul#menu-primary-navigation.navbar-nav.nav > li > a {
-    /*color: #333333 !important;*/
-    padding: 7px 10px;
+    padding: 9px 10px;
 }
 ul#menu-primary-navigation li, .navbar-header .navbar-brand {
     font-size: 17px;
@@ -1689,4 +1688,22 @@ margin-top:0px
 }
 header.masthead .container {
     width: 945px !important;
+}
+.format-label[data-format="Data-Dictionary"] {
+    background-image:url('../images/data-dictionary.png');
+    height: 35px;
+    width: 31px;
+    background-position:0px 0px;
+}
+.format-label[data-format="Landing-Page"] {
+    background-image:url('../images/landing-page.png');
+    height: 33px;
+    width: 32px;
+    background-position:0px 0px;
+}
+.format-label[data-format="API-Endpoint"] {
+    background-image:url('../images/api-endpoint.png');
+    height: 35px;
+    width: 23px;
+    background-position:0px 0px;
 }
